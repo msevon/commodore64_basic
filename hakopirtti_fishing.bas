@@ -15,7 +15,7 @@
 100 poke 53287,10
 110 poke 2040,200
 120 poke 53248,148
-130 poke 53249,60
+130 poke 53249,62
 140 poke 53276, peek(53276) or 3
 150 poke 53277, peek(53277) and 254
 160 data 0,0,0,0,0,0,0,0,21,0,0,41,0,0,41,64
@@ -28,7 +28,7 @@
 220 poke 53288,11
 230 poke 2041,201
 240 poke 53250,160
-250 poke 53251,71
+250 poke 53251,73
 260 poke 53276, peek(53276) or 12
 270 poke 53277, peek(53277) and 253
 280 data 0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,0
@@ -59,6 +59,11 @@
 
 530 print chr$(147)
 
+535 rem --- draw water ---
+536 for j = 1 to 3: print : next j
+537 for i = 1 to 40: print "-";: next i
+538 print
+
 540 rem --- main loop ---
 550 a = peek(197)
 560 left = a and 1
@@ -85,9 +90,6 @@
 
 720 prevbx = bx
 730 goto 540
-
-
-
 
 
 
