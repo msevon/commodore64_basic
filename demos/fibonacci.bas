@@ -1,0 +1,8 @@
+10 A = 1: B = 1
+20 PRINT A
+25 PRINT B
+30 FOR I = 3 TO 20
+40 T = A + B: A = B: B = T
+50 PRINT T
+55 FOR D = 1 TO 1000: NEXT D
+60 NEXT I
